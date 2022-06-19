@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f2f2f2;
+}
+.scroller{
+    display: inline-flex;
+
+    width: 75vw;
+
+    overflow: hidden;
+}
+section .card .image{
+    padding: 3px;
+
+    height: 140px;
+    width: 140px;
+
+    border-radius: 50%;
+
+    background-color: rgb(125, 42, 232);
+
+}
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.card{
+    position: relative;
+
+    background-color: #fff;
+    margin-right: 90px;
+    border-radius: 20px;
+    min-width: 280px;
+
+    transition: all 1s;
+}
+ 
+.card::before{
+    content: "";
+
+    position: absolute;
+    height: 40%;
+    width: 100%;
+
+    background-color: #7d2ae8;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-content{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px;
+
+    z-index: 2;
+}
+.card .media-icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card .media-icons i{
+    margin-top: 20px;
+
+    opacity: 0.6;
+    color: #fff;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.card .media-icons i:hover{
+    opacity: 1;
+}
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+    color: #333;
+}
+.card .name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.card .name-profession .profession{
+    font-size: 15px;
+    font-weight: 500;
+}
+.card .rating{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 18px;
+}
+.card .rating i{
+    font-size: 18px;
+    margin: 0 2px;
+    color: #7d2ae8;
+}
+.card .button{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-top: 20px;
+}
+.card .button button{
+    padding: 8px 22px;
+
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #7d2ae8;
+
+    font-size: 14px;
+
+    border-radius: 20px;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button button:hover{
+    background-color: #6616d0;
+}
+
+.scroller-nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10px;
+
+    width: 75px;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+.scroller-nav-btn{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
